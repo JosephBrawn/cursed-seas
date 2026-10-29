@@ -1,0 +1,14 @@
+{
+  "itemGroup.cursedseas": "Example Mod Tab",
+  "block.cursedseas.example_block": "Example Block",
+  "item.cursedseas.example_item": "Example Item",
+
+  "cursedseas.configuration.title": "Cursed Seas Configs",
+  "cursedseas.configuration.section.cursedseas.common.toml": "Cursed Seas Configs",
+  "cursedseas.configuration.section.cursedseas.common.toml.title": "Cursed Seas Configs",
+  "cursedseas.configuration.items": "Item List",
+  "cursedseas.configuration.logDirtBlock": "Log Dirt Block",
+  "cursedseas.configuration.magicNumberIntroduction": "Magic Number Text",
+  "cursedseas.configuration.magicNumber": "Magic Number",
+  "item.cursedseas.gold_doubloon": "Gold Doubloon"
+}
