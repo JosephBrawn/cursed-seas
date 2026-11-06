@@ -1,0 +1,20 @@
+{
+  "textures": {
+    "gold": "minecraft:block/gold_block",
+    "particle": "minecraft:block/gold_block"
+  },
+  "elements": [
+    {
+      "from": [5, 0, 5],
+      "to": [11, 1, 11],
+      "faces": {
+        "up": {"texture": "#gold"},
+        "down": {"texture": "#gold"},
+        "north": {"texture": "#gold"},
+        "south": {"texture": "#gold"},
+        "east": {"texture": "#gold"},
+        "west": {"texture": "#gold"}
+      }
+    }
+  ]
+}

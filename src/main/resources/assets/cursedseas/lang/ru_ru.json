@@ -1,3 +1,5 @@
 {
-  "item.cursedseas.gold_doubloon": "Золотой дублон"
+  "item.cursedseas.gold_doubloon": "Золотой дублон",
+  "message.cursedseas.coins_collected": "Подобрано дублонов: %s",
+  "message.cursedseas.inventory_full": "Недостаточно места в инвентаре"
 }

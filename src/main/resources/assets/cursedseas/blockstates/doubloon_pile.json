@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "size=0": {
+      "model": "cursedseas:block/doubloon_1"
+    },
+    "size=1": {
+      "model": "cursedseas:block/doubloon_2"
+    },
+    "size=2": {
+      "model": "cursedseas:block/doubloon_3"
+    },
+    "size=3": {
+      "model": "cursedseas:block/doubloon_4"
+    },
+    "size=4": {
+      "model": "cursedseas:block/doubloon_5"
+    },
+    "size=5": {
+      "model": "cursedseas:block/doubloon_6"
+    },
+    "size=6": {
+      "model": "cursedseas:block/doubloon_7"
+    },
+    "size=7": {
+      "model": "cursedseas:block/doubloon_pile"
+    },
+    "size=8": {
+      "model": "cursedseas:block/doubloon_pile_large"
+    },
+    "size=9": {
+      "model": "cursedseas:block/doubloon_pile_large"
+    }
+  }
+}

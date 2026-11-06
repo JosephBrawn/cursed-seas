@@ -10,5 +10,7 @@
   "cursedseas.configuration.logDirtBlock": "Log Dirt Block",
   "cursedseas.configuration.magicNumberIntroduction": "Magic Number Text",
   "cursedseas.configuration.magicNumber": "Magic Number",
-  "item.cursedseas.gold_doubloon": "Gold Doubloon"
+  "item.cursedseas.gold_doubloon": "Gold Doubloon",
+  "message.cursedseas.coins_collected": "Doubloons collected: %s",
+  "message.cursedseas.inventory_full": "Not enough inventory space"
 }

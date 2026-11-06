@@ -1,0 +1,35 @@
+
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cursedseas:item/gold_doubloon"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, -90, 25],
+      "translation": [1.1, 0.8, 0.2],
+      "scale": [0.22, 0.22, 0.22]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -25],
+      "translation": [-1.1, 0.8, 0.2],
+      "scale": [0.22, 0.22, 0.22]
+    },
+    "thirdperson_righthand": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0.5, 0],
+      "scale": [0.18, 0.18, 0.18]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0.5, 0],
+      "scale": [0.18, 0.18, 0.18]
+    },
+
+    "ground": {
+      "rotation": [90, 0, 0],
+      "translation": [0, -2, 0],
+      "scale": [0.14, 0.14, 0.14]
+    }
+  }
+}

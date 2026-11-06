@@ -1,5 +1,7 @@
 package com.cursedseas.mod;
 
+import com.cursedseas.mod.registry.ModBlockEntities;
+import com.cursedseas.mod.registry.ModBlocks;
 import com.cursedseas.mod.registry.ModItems;
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
@@ -22,5 +24,9 @@ public class CursedSeas {
 
         // Подключаем регистрацию предметов
         ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
     }
+
+
 }
