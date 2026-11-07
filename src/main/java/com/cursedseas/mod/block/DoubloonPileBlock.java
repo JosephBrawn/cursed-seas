@@ -75,27 +75,42 @@ public class DoubloonPileBlock extends Block implements EntityBlock {
     private static final VoxelShape LARGE_SHAPE =
             Block.box(1, 0, 1, 15, 5, 15);
 
+    private static final VoxelShape SCATTER_8_15_SHAPE =
+            Block.box(2.3, 0, 2.3, 13.8, 0.7, 13.8);
+
+    private static final VoxelShape SCATTER_16_23_SHAPE =
+            Block.box(1.4, 0, 1.4, 15.0, 1.2, 15.0);
+
+    private static final VoxelShape SCATTER_24_31_SHAPE =
+            Block.box(1.4, 0, 1.4, 15.1, 1.6, 15.1);
+
+
+
 
     private VoxelShape getPileShape(BlockState state) {
-
         int size = state.getValue(SIZE);
 
         if (size <= 6) {
             return COIN_SHAPES[size];
         }
 
-        if (size == 7) {
-            return MEDIUM_SHAPE;
-        }
-
-        return LARGE_SHAPE;
+        return switch (size) {
+            case 7 -> SCATTER_8_15_SHAPE;
+            case 8 -> SCATTER_16_23_SHAPE;
+            case 9 -> SCATTER_24_31_SHAPE;
+            case 10, 11 -> LARGE_SHAPE;
+            default -> throw new IllegalStateException(
+                    "Unexpected pile size: " + size
+            );
+        };
     }
 
 
 
 
+
     public static final IntegerProperty SIZE =
-            IntegerProperty.create("size", 0, 9);
+            IntegerProperty.create("size", 0, 11);
 
 
     public DoubloonPileBlock(BlockBehaviour.Properties properties) {
@@ -211,32 +226,19 @@ public class DoubloonPileBlock extends Block implements EntityBlock {
     }
 
 
+
     public static int getSizeForCoins(int coins) {
+        if (coins <= 1) return 0;
+        if (coins <= 7) return coins - 1;
 
-        // Одна монета
-        if (coins <= 1) {
-            return 0;
-        }
+        if (coins <= 15) return 7;
+        if (coins <= 23) return 8;
+        if (coins <= 31) return 9;
 
-        // От 2 до 7 монет:
-        // каждая имеет собственную модель
-        if (coins <= 7) {
-            return coins - 1;
-        }
-
-        // Небольшая кучка
-        if (coins < 32) {
-            return 7;
-        }
-
-        // Средняя куча
-        if (coins < 96) {
-            return 8;
-        }
-
-        // Большая куча
-        return 9;
+        if (coins <= 95) return 10;
+        return 11;
     }
+
 
 
 

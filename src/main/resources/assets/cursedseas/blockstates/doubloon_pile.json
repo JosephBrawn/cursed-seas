@@ -22,13 +22,19 @@
       "model": "cursedseas:block/doubloon_7"
     },
     "size=7": {
-      "model": "cursedseas:block/doubloon_pile"
+      "model": "cursedseas:block/doubloon_scatter_8_15"
     },
     "size=8": {
-      "model": "cursedseas:block/doubloon_pile_large"
+      "model": "cursedseas:block/doubloon_scatter_16_23"
     },
     "size=9": {
-      "model": "cursedseas:block/doubloon_pile_large"
+      "model": "cursedseas:block/doubloon_scatter_24_31"
+    },
+    "size=10": {
+      "model": "cursedseas:block/doubloon_pile_32_95"
+    },
+    "size=11": {
+      "model": "cursedseas:block/doubloon_pile_96_plus"
     }
   }
 }
